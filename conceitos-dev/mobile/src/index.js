@@ -15,7 +15,7 @@ export default function App() {
 
   async function handleAddProject() {
     const response = await api.post('projects', {
-      title: `Novo Projeto ${Date.now()}`,
+      title: `Projeto ${Date.now()}`,
       owner: 'Leonidas Yopan'
     });
 

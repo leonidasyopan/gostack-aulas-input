@@ -1,11 +1,11 @@
 import { Router } from 'express';
 
-const userRouter = Router();
-
 import CreateUserService from '../services/CreateUserService';
 
+const userRouter = Router();
+
 userRouter.post('/', async (request, response) => {
-  try{
+  try {
     const { name, email, password } = request.body;
 
     const createUser = new CreateUserService();
